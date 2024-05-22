@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+{% block content %}
+<h1>Principle Home Page</h1>
+
+
+
+          <a class="btn btn-danger" href="{% url 'management:teachersignup' %}">teachersignup</a><br><br>
+
+          <a class="btn btn-danger"  href="{% url 'management:studentsignup' %}">studentsignup</a><br><br>
+
+          <a class="btn btn-danger" href="{% url 'management:studentsview' %}">studentsview</a><br><br>
+
+          <a class="btn btn-danger"  href="{% url 'management:teachersview' %}">teachersview</a><br>
+
+
+{% endblock %}
+
+
+</body>
+</html>
